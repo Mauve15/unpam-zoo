@@ -1,0 +1,441 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+
+}
+
+body {
+	background-color: #fff;
+	min-height: 150vh;
+	overflow-x: hidden;
+}
+
+header {
+	background-color: rgb(255, 150, 0);
+	display: flex;
+	position: absolute;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 25px 25px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+  }
+
+  .container {
+	width: 95%;
+	background-color: #ffffff;
+	border-radius: 8px;
+	margin-bottom: 24px;
+	padding: 24px;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .container1 {
+	background-color: #003329;
+	color: #fff;
+	width: 100%;
+	margin: auto;
+	overflow: hidden;
+	padding: 4rem 1rem;
+  }
+
+  .grid-3 {
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+  }
+
+  .form-group {
+	margin-bottom: 16px;
+  }
+  
+  label {
+	font-size: 16px;
+	color: #333;
+	margin-bottom: 8px;
+  }
+  
+  input[type='text'],
+  input[type='number'],
+  input[type='checkbox'] {
+	width: 100%;
+	padding: 12px;
+	border: 2px solid #9475ea;
+	border-radius: 8px;
+	font-size: 16px;
+	background-color: #f5f1ff;
+	margin-bottom: 8px;
+  }
+  
+  input[type='checkbox'] {
+	width: auto;
+	margin-left: 8px;
+  }
+
+.logo {
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	font-size: 2.5em;
+	font-weight: 700;
+	color: #ffffff;
+	margin-right: 270px;
+}
+
+/* CSS untuk tombol menu toggle di mode mobile */
+.menu-toggle {
+    display: none;
+    /* background-color: rgba(0, 0, 0, 0.01); Sesuaikan transparansi dengan header */
+    border: none;
+    color: #9475ea;
+    padding: 14px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.menu-toggle:focus {
+    outline: none;
+}
+
+.navlist {
+    display: flex; /* Tampilkan menu secara default untuk desktop */
+    background-color: rgba(0, 0, 0, 0.01);
+	align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 1rem;
+	padding: 12px 16px;
+}
+
+.navlist.active {
+    display: flex;
+}
+
+.navlist a {
+	color: #9475ea;
+	font-size: 1.2rem;
+	font-weight: 600;
+	font-family: 'Poppins', sans-serif;
+	text-decoration: none;
+	border-radius: 20px;
+	padding: 10px 16px;
+	margin: 0 10px;
+}
+
+.navlist a:hover,
+.navlist a.active {
+	background-color: #0CB600;
+	color: #fff;
+}
+
+.nav-link::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffe924;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-link:hover::before {
+    visibility: visible;
+    width: 100%;
+}
+
+.parallax {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	overflow: hidden;
+}
+
+#text {
+	position: absolute;
+	color: #fff;
+	font-weight: 700;
+	font-size: 6em;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.parallax img {
+	position: absolute;
+	top: -1;
+	left: 0;
+	width: 100%;
+	pointer-events: none;
+
+
+}
+
+.par {
+	position: relative;
+	background-color: #003329;
+	padding: 100px;
+}
+
+.par h2 {
+	color: #fff;
+	font-size: 3em;
+	margin-bottom: 10px;
+}
+
+.par p {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 300;
+}
+
+.parr {
+	position: relative;
+	background-color: #acc92b;
+	padding: 100px;
+}
+
+.parr h2 {
+	color: #fff;
+	font-size: 3em;
+	margin-bottom: 10px;
+}
+
+.parr p {
+	color: #fff;
+	font-size: 1em;
+	font-weight: 300;
+}
+
+.para {
+	position: relative;
+	background-color: #003329;
+	padding: 50px;
+
+}
+
+.para h2 {
+	color: #003329;
+	font-size: 3em;
+	margin-bottom: 10px;
+}
+
+.para h4 {
+	color: #54ee7a;
+	font-size: 3em;
+	margin-bottom: 10px;
+}
+
+.para p {
+	color: #000000;
+	font-size: 1em;
+	font-weight: 300;
+}
+
+#rcorners2 {
+	border-radius: 15px 50px;
+	box-shadow: 5px 5px 5px 5px #003329;
+	/* padding: 10px;  */
+	width: 150px;
+	height: 200px;
+}
+
+main {
+	flex-grow: 1;
+	display: flex;
+	padding: 20px;
+	background-color: #f4f4f4;
+}
+
+article {
+	flex: 3;
+	padding: 20px;
+	background-color: white;
+	margin-right: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+aside {
+	flex: 1;
+	padding: 20px;
+	background-color: #f4f4f4;
+	border-radius: 8px;
+}
+
+img {
+	max-width: 100%;
+	border-radius: 8px;
+}
+
+.bio {
+	margin-top: 15px;
+}
+
+.button1 {
+	background-color: #4d3af8;
+	/* Green */
+	border: none;
+	color: white;
+	padding: 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.button2 {
+	border-radius: 8px;
+}
+
+button {
+	background-color: #5f30e2;
+	color: white;
+	border: none;
+	padding: 8px 20px;
+	font-size: 16px;
+	border-radius: 8px;
+	margin: 2px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+	background-color: #4b24b7;
+  }
+
+footer {
+	background-color: #003329;
+	padding: 10px;
+	text-align: center;
+	color: white;
+  }
+
+  #incompleteBookList,
+  #completeBookList {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 16px;
+  }
+  
+  [data-testid='bookItem'] {
+	background-color: #ffffff;
+	border-radius: 8px;
+	padding: 16px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  [data-testid='bookItem'] h3 {
+	font-size: 18px;
+	font-weight: 600;
+	margin-bottom: 8px;
+	color: #333;
+  }
+  
+  [data-testid='bookItem'] p {
+	font-size: 14px;
+	color: #666;
+  }
+  
+  [data-testid='bookItem'] div {
+	margin-top: 12px;
+	display: flex;
+	justify-content: flex-start;
+	gap: 12px;
+  }
+  
+  [data-testid='bookItem'] button {
+	background-color: #9475ea;
+	padding: 8px 16px;
+	border-radius: 6px;
+	font-size: 14px;
+  }
+  
+  [data-testid='bookItem'] button:hover {
+	background-color: #5f30e2;
+  }
+
+  @media (max-width: 768px) {
+    /* Header */
+    header {
+        flex-direction: column; /* Tampilkan elemen secara vertikal */
+        padding: 20px;
+    }
+
+	.navlist {
+        display: none; /* Sembunyikan menu secara default */
+    }
+
+	
+    /* Sisanya sama seperti yang sudah ada */
+
+    .navlist a {
+        margin: 10px 0; /* Beri jarak antar item menu */
+    }
+
+    /* Parallax */
+    .parallax {
+        height: 27vh; /* Kurangi tinggi parallax untuk layar kecil */
+    }
+
+    #text {
+        font-size: 3em; /* Perkecil ukuran teks */
+    }
+
+    /* Bagian artikel */
+    main {
+        flex-direction: column; /* Tampilkan artikel secara vertikal */
+    }
+
+    article {
+        margin-bottom: 20px;
+    }
+
+	.logo {
+		font-size: 1rem;
+	}
+
+	.menu-toggle {
+        display: block;
+		right: 5px;
+		top: 10px;
+		background-color: rgba(0, 0, 0, 0.3); /* Sesuaikan transparansi dengan header */		
+		border-radius: 10px;
+	}
+
+	.par {
+		padding: 50px;
+	}
+
+	.container {
+		width: 100%;
+		padding: 16px;
+	  }
+	
+	  #incompleteBookList,
+  #completeBookList {
+    grid-template-columns: 1fr;
+  }
+
+  .services div {
+    border-bottom: #333 dashed 1px;
+    padding: 1.2rem 1rem;
+  }
+}

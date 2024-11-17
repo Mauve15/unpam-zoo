@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/svg+xml" href="asset/logo5.svg">
+	<meta name="description" content="Hai, teman-teman kecil! Di sini, kamu akan menemukan banyak cerita menarik yang penuh dengan petualangan, 
+	tawa, dan pelajaran berharga. Setiap cerita di website ini ditulis khusus untuk membuatmu berani bermimpi besar, percaya pada dirimu sendiri, 
+	dan selalu berbuat baik.">
+	<meta name="google-site-verification" content="9EkcKr4I6X7534hIXUc7ssHkEWcccjRbjwMTEf-oAUk" />
+
+	<title>Unpam Zoo</title>
+</head>
+<body>
+	<header>
+		<a href="https://anstory.my.id/" class="logo">Unpam Zoo's</a>
+    <button class="menu-toggle">☰ Menu</button>
+		<ul class="navlist">
+			<li class="nav-link"><a href="https://anstory.my.id/" class="active">Home</a></li>
+			<li class="nav-link"><a href="dongeng.html">Dongeng</a></li>
+			<!-- <li class="nav-link"><a href="cars.html">City</a></li> -->
+			<li class="nav-link"><a href="about.html">About</a></li>
+		</ul>
+	</header>
+	<div class="progress-container">
+		<div class="progress-bar" id="myBar"></div>
+	</div>
+	<section class="parallax">
+
+		<img type="image/avif" alt="hill1" src="asset\hill1.avif" id="hill1">
+		<img type="image/avif" alt="hill2" src="asset\hill2.avif" id="hill2">
+		<img type="image/avif" alt="hill3" src="asset\hill3.avif" id="hill3">
+		<img type="image/avif" alt="hill4" src="asset\hill4.avif" id="hill4">
+		<img type="image/avif" alt="hill5" src="asset\hill5.avif" id="hill5">
+		<img alt="tree" src="asset\tree.png" id="tree">
+		<img alt="jerapah" src="asset\jerapah.png" id="jerapah">
+		
+		<h2 id="text">Unpam Zoo's</h2>
+		<img type="image/avif" alt="leaf1" src="asset\leaf1.avif" id="leaf1">
+		<img alt="kelinci" src="asset\kelinci.png" id="kelinci">
+		<img type="image/avif" alt="plant" src="asset\plant.avif" id="plant">
+		<img alt="burung" src="asset\burung.png" id="burung">
+		<img type="image/avif" alt="harimau" src="asset\harimau.avif" id="harimau">
+		<img alt="gajah" src="asset\gajah.png" id="gajah">
+		<img alt="buaya" src="asset\buaya.png" id="buaya">
+	</section>
+
+	<section class="par">
+		<h2>Selamat Datang di unpam Zoo's</h2>
+		<p>
+			Hai, teman-teman kecil! Di sini, kamu akan menemukan banyak cerita menarik yang penuh dengan petualangan,
+			tawa, dan pelajaran berharga. Setiap cerita di website ini ditulis khusus untuk membuatmu berani bermimpi
+			besar,
+			percaya pada dirimu sendiri, dan selalu berbuat baik. Di dunia cerita ini, kamu akan bertemu dengan pahlawan
+			kecil seperti kamu!
+			Ada Bima si pemberani yang selalu menolong teman-temannya, Siti yang tidak pernah menyerah walaupun
+			menghadapi kesulitan,
+			dan Lala si peri kecil yang selalu bersemangat belajar hal-hal baru.
+			Yuk, mulai petualanganmu sekarang! Siap-siap terinspirasi dan jadi pahlawan dalam ceritamu sendiri!<br>
+		</p>
+	</section>
+
+	<main>
+		<article>
+			<h2>Kumpulan Artikel Cerita Pendek</h2>
+			<article>
+				<h2>Gajah dan Jerapah: Persahabatan di Tengah Perbedaan</h2>
+				<p>Gajah dan Jerapah adalah dua sahabat yang tinggal di hutan besar. Gajah, dengan tubuhnya yang besar
+					dan kuat, sering membantu teman-temannya dengan kekuatannya. Sementara itu, Jerapah yang tinggi menjulang
+					selalu bisa melihat jauh ke seberang hutan.</p>
+					<button class="button1 button2" onclick="window.location.href='gapah.html'">Lanjutkan</button>
+				</article>
+			<br>
+			<article>
+				<h2>Kelinci dan Buaya: Kecerdikan yang Menyelamatkan</h2>
+				<p>Kelinci adalah hewan yang lincah dan cerdik, sementara Buaya adalah penghuni sungai yang besar dan
+					kuat. Suatu hari, Kelinci ingin menyeberangi sungai untuk mencari makanan, tetapi dia tahu bahwa Buaya sering
+					mengintai di dalam air. Dengan kecerdasannya, Kelinci memikirkan cara untuk melewati sungai tanpa dimangsa oleh Buaya.</p>
+					<button class="button1 button2" onclick="window.location.href='kelbu.html'">Lanjutkan</button>
+			</article>
+			<br>
+			<article>
+				<h2>Ayam dan Harimau: Keberanian di Balik Kelemahan</h2>
+				<p>Di sebuah hutan yang damai, Harimau dikenal sebagai raja yang kuat dan ditakuti, sementara Ayam
+					hanyalah hewan kecil yang sering dianggap lemah oleh penghuni hutan lainnya. Suatu hari, Harimau merasa sangat lapar dan
+					memutuskan untuk memangsa Ayam. Dengan gagah, Harimau mengejar Ayam ke seluruh hutan.</p>
+					<button class="button1 button2" onclick="window.location.href='haray.html'">Lanjutkan</button>
+			</article>
+		</article>
+	</main>
+	<script src="script.js"></script>
+	<script>
+		const menuToggle = document.querySelector('.menu-toggle');
+const navList = document.querySelector('.navlist');
+
+menuToggle.addEventListener('click',   
+ () => {
+    navList.classList.toggle('active');
+});
+	</script>
+<footer>
+	<p>Unpam Zoo's 2024</p>
+</footer>
+</body>
+</html>

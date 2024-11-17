@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" href="asset/logo4.png">
+	<meta name="description" content="Daftar Cerita Pendek">
+	<meta name="google-site-verification" content="9EkcKr4I6X7534hIXUc7ssHkEWcccjRbjwMTEf-oAUk" />
+	<title>Unpam Zoo's</title>
+</head>
+
+<body>
+	<header>
+		<a href="https://anstory.my.id/" class="logo">Unpam Zoo's</a>
+		<button class="menu-toggle">☰ Menu</button>
+		<ul class="navlist">
+			<li><a href="https://anstory.my.id/">Home</a></li>
+			<li><a href="#" class="active">Dongeng</a></li>
+			<li><a href="about.html">About</a></li>
+		</ul>
+	</header>
+	<div class="progress-container">
+		<div class="progress-bar" id="myBar"></div>
+	</div>
+	<section class="parallax">
+
+		<img type="image/avif" alt="hill1" src="asset\hill1.avif" id="hill1">
+		<img type="image/avif" alt="hill2" src="asset\hill2.avif" id="hill2">
+		<img type="image/avif" alt="hill3" src="asset\hill3.avif" id="hill3">
+		<img type="image/avif" alt="hill4" src="asset\hill4.avif" id="hill4">
+		<img type="image/avif" alt="hill5" src="asset\hill5.avif" id="hill5">
+		<img alt="tree" src="asset\tree.png" id="tree">
+		<img alt="jerapah" src="asset\jerapah.png" id="jerapah">
+		<img alt="gajah" src="asset\gajah.png" id="gajah">
+		<h2 id="text">Daftar Dongeng</h2>
+		<img type="image/avif" alt="leaf1" src="asset\leaf1.avif" id="leaf1">
+		<img type="image/avif" alt="plant" src="asset\plant.avif" id="plant">
+		<img alt="burung" src="asset\burung.png" id="burung">
+	</section>
+
+	<section class="para">
+		<h4>Daftar Cerita Pendek</h4>
+		<article>
+			<h3>Gajah dan Jerapah: Persahabatan di Tengah Perbedaan</h3>
+			<p>Gajah dan Jerapah adalah dua sahabat yang tinggal di hutan besar. Gajah, dengan tubuhnya yang besar
+				dan kuat,
+				sering membantu teman-temannya dengan kekuatannya. Sementara itu, Jerapah yang tinggi menjulang
+				selalu bisa
+				melihat jauh ke seberang hutan. Meskipun berbeda bentuk dan ukuran, keduanya saling melengkapi satu
+				sama lain.</p>
+				<button class="button button2" onclick="window.location.href='gapah.html'">Selengkapnya</button>
+		</article>
+		<br>
+		<article>
+			<h3>Kelinci dan Buaya: Kecerdikan yang Menyelamatkan</h3>
+			<p>Kelinci adalah hewan yang lincah dan cerdik, sementara Buaya adalah penghuni sungai yang besar dan
+				kuat. Suatu hari,
+				Kelinci ingin menyeberangi sungai untuk mencari makanan, tetapi dia tahu bahwa Buaya sering
+				mengintai di dalam air.
+				Dengan kecerdasannya, Kelinci memikirkan cara untuk melewati sungai tanpa dimangsa oleh Buaya.
+				Kelinci berpura-pura mengajak Buaya untuk menghitung semua buaya di sungai, dengan alasan dia ingin
+				memastikan
+				jumlah mereka cukup untuk sebuah pesta besar.</p>
+				<button class="button button2" onclick="window.location.href='kelbu.html'">Selengkapnya</button>
+		</article>
+		<br>
+		<article>
+			<h3>Ayam dan Harimau: Keberanian di Balik Kelemahan</h3>
+			<p>Di sebuah hutan yang damai, Harimau dikenal sebagai raja yang kuat dan ditakuti, sementara Ayam
+				hanyalah hewan kecil
+				yang sering dianggap lemah oleh penghuni hutan lainnya. Suatu hari, Harimau merasa sangat lapar dan
+				memutuskan
+				untuk memangsa Ayam. Dengan gagah, Harimau mengejar Ayam ke seluruh hutan.</p>
+				<button class="button button2" onclick="window.location.href='haray.html'">Selengkapnya</button>
+		</article>
+
+	</section>
+	<script>
+	const menuToggle = document.querySelector('.menu-toggle');
+	const navList = document.querySelector('.navlist');
+
+menuToggle.addEventListener('click',   
+ () => {
+    navList.classList.toggle('active');
+});
+	</script>
+	<script type="text/javascript" src="script.js"></script>
+	<footer>
+		<p>Unpam Zoo's 2024</p>
+	</footer>
+</body>
+
+</html>
